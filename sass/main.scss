@@ -1,0 +1,42 @@
+$color-primary:#9356DC;
+$color-secundary:#FF79DA;
+$color-third:#99E2D0;
+$txt-logo-titre:'Shrikhand', cursive;
+$txt-paragraphe:'roboto', sans-serif;
+$darker-grey:#EAEAEA;
+
+body{
+    width:100%;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width:100%;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width:50%;
+}
+
+.localisation{
+    width:100%;
+    margin-top:5px;
+    display:flex;
+    justify-content: center;
+    background:$darker-grey;
+    font-family: $txt-paragraphe;
+    font-size:20px;
+}
+
+.fa-location-dot{
+    margin-top:20px;
+    margin-right:25px;
+}
+
