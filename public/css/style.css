@@ -9,7 +9,8 @@
 header {
   width: 100%;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   z-index: 1;
   display: flex;
   box-sizing: border-box;
