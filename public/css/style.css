@@ -103,7 +103,7 @@ footer .fa-handshake {
   font-family: "roboto", sans-serif;
 }
 .card .card-content {
-  padding-left: 10mkdpx;
+  padding-left: 10px;
 }
 .card .card-title {
   padding-bottom: 5px;
@@ -112,20 +112,16 @@ footer .fa-handshake {
   padding-bottom: 10px;
 }
 .card .heart {
-  width: 22px;
-  height: 21px;
   position: absolute;
   top: 160px;
-  right: 35px;
+  right: 50px;
 }
-.card .new2 {
-  position: fixed;
-  z-index: 3;
-  top: 25px;
-  right: 30px;
-  padding: 3px;
-  background: #99E2D0;
-  color: #008766;
+.card .heart:hover {
+  background: linear-gradient(#9356DC, #ff79d9);
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .city {
@@ -161,7 +157,7 @@ footer .fa-handshake {
   color: linear-gradient(#ff79d9, #9356DC);
   font-weight: bold;
   cursor: pointer;
-  transition: all 5s linear;
+  transition: all 2s linear;
 }
 
 .choice {
@@ -233,8 +229,14 @@ footer .fa-handshake {
   background: #f6f6f6;
   border-radius: 20px;
 }
+.element1 i {
+  color: #7e7e7e;
+}
 .element1:hover {
   background: #F5DEFF;
+}
+.element1:hover i {
+  color: #9356DC;
 }
 
 .box {
