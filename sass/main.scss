@@ -103,6 +103,103 @@
     }
 }
 
+/*Page restaurant*/
+
+
+.restaurant-picture{
+    width:100%;
+    z-index:-1;
+    .picture{
+        width:100%;
+    }
+}
+
+.container-menu{
+    background: $lighter-grey;
+    .restaurant-menu{
+        position:relative;
+        width:100%;
+        z-index:3;
+        margin-top:-4rem;
+        padding-top:35px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background:$lighter-grey;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .restaurant-name{
+        display:flex;
+        font-family:$txt-logo-titre;
+        color:black;
+        font-size:24px;
+        margin:0;
+    }
+    .heart{
+        font-size:24px;
+        &:hover{
+            background:linear-gradient($color-primary,$color-secundary);
+            font-weight: bold;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+            }
+    }
+    .menu{
+        margin-top:20px;
+        margin-left:13px;
+        .dish{
+            position:relative;
+            font-family: $txt-paragraphe;
+            font-weight:300;
+            margin-top:20px;
+            margin-bottom:40px;
+            padding-bottom:5px;
+            &::after{
+                position:absolute;
+                content:"";
+                width:2.5rem;
+                height:0.2rem;
+                left:0;
+                bottom:0;
+                background:$color-third;
+            }   
+        }
+        .submenus{
+            width:97%;
+        }
+        .article{
+            background:white;
+            border-radius:25px;
+            padding:10px;
+            margin-bottom:15px;
+            font-family: $txt-paragraphe;
+            display: flex;
+            justify-content: space-between;
+            .article-subtitle{
+                font-size:15px;
+            }
+            .article-price{
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+        .command{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+
+
+
+
+
 
 
 
