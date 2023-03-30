@@ -49,11 +49,14 @@ footer i {
 footer .fa-handshake {
   transform: rotate(45deg);
 }
+footer .fa-utensils {
+  margin-right: 15px;
+}
 
 .explore {
-  background: linear-gradient(#ff79d9, #9356DC);
-  height: 50px;
+  background: linear-gradient(#ff79d9, #9356DC); /*height: 50px;*/
   border-radius: 25px;
+  padding: 15px;
   color: white;
   font-size: 18px;
   border: none;
@@ -92,8 +95,8 @@ footer .fa-handshake {
 .card .new {
   position: fixed;
   z-index: 3;
-  top: 25px;
-  right: 30px;
+  top: 15px;
+  right: 10px;
   padding: 3px;
   background: #99E2D0;
   color: #008766;
@@ -114,6 +117,7 @@ footer .fa-handshake {
 }
 .card .heart {
   position: absolute;
+  font-size: 23px;
   top: 160px;
   right: 50px;
 }
@@ -161,6 +165,115 @@ footer .fa-handshake {
   transition: all 2s linear;
 }
 
+.loader {
+  background: linear-gradient(#9356DC, #ff79d9);
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s 3s forwards;
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+span {
+  width: 100%;
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.let1 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.let2 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+.let3 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.let4 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.let5 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+.let6 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+
+.let7 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.let8 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.9s;
+}
+
+@keyframes drop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  80% {
+    opacity: 1;
+    top: 3.78em;
+    transform: rotateX(-360deg);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    top: 6.94em;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 25%;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
 .choice {
   background: #EAEAEA;
   display: flex;
@@ -208,11 +321,11 @@ footer .fa-handshake {
 .number {
   position: absolute;
   background: #9356DC;
-  border-radius: 50%;
-  font-size: 16px;
+  border-radius: 100%;
+  font-size: 17px;
   text-align: center;
   color: #f6f6f6;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   z-index: 3;
   margin-left: 10px;
 }
