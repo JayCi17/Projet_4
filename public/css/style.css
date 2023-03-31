@@ -59,6 +59,10 @@ footer .fa-handshake {
 footer .fa-utensils {
   margin-right: 15px;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
 
 .explore {
   background: linear-gradient(#ff79d9, #9356DC); /*height: 50px;*/
@@ -71,6 +75,10 @@ footer .fa-utensils {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+.explore a {
+  color: white;
+  text-decoration: none;
 }
 .explore:hover {
   background: linear-gradient(#ff91e0, #9a65da);
@@ -281,6 +289,30 @@ span {
     visibility: hidden;
   }
 }
+.first {
+  animation: dishappear 1s ease-in-out;
+}
+
+.second {
+  animation: dishappear 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.third {
+  animation: dishappear 1s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes dishappear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .choice {
   background: #EAEAEA;
   display: flex;
@@ -449,19 +481,37 @@ span {
   margin-bottom: 15px;
   font-family: "roboto", sans-serif;
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  max-width: 100%;
+}
+.container-menu .menu .article .article-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container-menu .menu .article .article-subtitle {
   font-size: 15px;
 }
 .container-menu .menu .article .article-price {
+  margin-right: 3em;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
+  font-weight: bold;
 }
-.container-menu .menu .command {
+.container-menu .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  width: 4rem;
+  margin: -1rem -5rem -1rem -1rem;
+}
+.container-menu .command {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
