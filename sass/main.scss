@@ -166,25 +166,34 @@
                 background:$color-third;
             }   
         }
-        .submenus{
-            width:97%;
-        }
+
         .article{
             background:white;
             border-radius:25px;
             padding:10px;
+            width:93%;
+            margin-left:auto;
+            margin-right:auto;
             margin-bottom:15px;
             font-family: $txt-paragraphe;
             display: flex;
             overflow:hidden;
-            max-width:100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             .article-name{
+                position: relative;
                 flex:1;
                 overflow:hidden;
                 text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .article-title{
+                text-overflow:ellipsis;
             }
             .article-subtitle{
                 font-size:15px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .article-price{
                 margin-right:3em;
@@ -202,8 +211,14 @@
             justify-content: center;
             align-items:center;
             background:$color-third;
-            width:4rem;
-            margin:-1rem -5rem -1rem -1rem;
+            width:5rem;
+            margin:-1rem -6rem -1rem -1rem;
+            .fa-check{
+                color:$color-third;
+                background:white;
+                padding:3px;
+                border-radius:20px;
+            }
         }
 
         .command{
