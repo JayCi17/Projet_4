@@ -90,6 +90,82 @@ footer a {
   overflow-x: hidden;
 }
 
+@media (min-width: 1290px) {
+  .logo {
+    width: 18%;
+  }
+  .choice .reserve {
+    font-family: "roboto", sans-serif;
+    font-size: 3em;
+    font-wight: bold;
+  }
+  .choice .catch-phrase {
+    font-family: "roboto", sans-serif;
+    font-size: 1.35em;
+  }
+  .loader h1 {
+    font-size: 8em;
+  }
+  main .notice-title {
+    margin-left: 12.5em;
+  }
+  main .rules {
+    flex-direction: row;
+    width: 70%;
+  }
+  main .restaurant-card {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .restaurant-card .card {
+    width: 36%;
+  }
+  footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 55px;
+  }
+  footer h3 {
+    font-size: 19px;
+    margin-left: 175px;
+    margin-right: 55px;
+  }
+  footer .mentions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  footer li {
+    margin-left: 25px;
+  }
+  footer .two {
+    margin-right: 30px;
+    overflow: hidden;
+  }
+  .restaurant-picture {
+    width: 100%;
+  }
+  .restaurant-picture .picture {
+    height: 25em;
+    object-fit: cover;
+  }
+  body .container-menu {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .container-menu .restaurant-menu {
+    justify-content: center;
+  }
+  body .container-menu .restaurant-menu .restaurant-name {
+    margin-right: 1em;
+  }
+}
 .card {
   width: 90%;
   background: white;
@@ -347,7 +423,7 @@ span {
 
 .reserve {
   font-family: "roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
@@ -443,15 +519,15 @@ span {
 
 .container-menu {
   background: #EAEAEA;
-}
-.container-menu .restaurant-menu {
   position: relative;
   width: 100%;
   z-index: 3;
   margin-top: -4rem;
-  padding-top: 35px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+}
+.container-menu .restaurant-menu {
+  padding-top: 35px;
   background: #EAEAEA;
   display: flex;
   align-items: center;
