@@ -64,29 +64,6 @@
 }
 
 
-.element1{
-    width:80%;
-    padding:20px;
-    margin-left: auto;
-    margin-right:auto;
-    font-family: $txt-paragraphe;
-    font-size:16px;
-    font-weight: bold;
-    display:flex;
-    justify-content:space-around;
-    background:#f6f6f6;
-    border-radius:20px;
-    i{
-        color:#7e7e7e;
-    }
-    &:hover{
-        background:#F5DEFF;
-        i{
-            color: $color-primary;
-        }
-    }
-}
-
 .box{
     width:100%;
     display:flex;
@@ -114,58 +91,7 @@
     }
 }
 
-.container-menu{
-    background: $lighter-grey;
-    position:relative;
-    width:100%;
-    z-index:3;
-    margin-top:-4rem;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    .restaurant-menu{
-        padding-top:35px;
-        background:$lighter-grey;
-        display:flex;
-        align-items: center;
-        justify-content:space-around;
-    }
-    .restaurant-name{
-        display:flex;
-        font-family:$txt-logo-titre;
-        color:black;
-        font-size:24px;
-        margin:0;
-    }
-    .heart{
-        font-size:24px;
-        &:hover{
-            background:linear-gradient($color-primary,$color-secundary);
-            font-weight: bold;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color:transparent;
-            }
-    }
-    .menu{
-        margin-top:20px;
-        margin-left:13px;
-        .dish{
-            position:relative;
-            font-family: $txt-paragraphe;
-            font-weight:300;
-            margin-top:20px;
-            margin-bottom:40px;
-            padding-bottom:5px;
-            &::after{
-                position:absolute;
-                content:"";
-                width:2.5rem;
-                height:0.2rem;
-                left:0;
-                bottom:0;
-                background:$color-third;
-            }   
-        }
+
 
         .article{
             background:white;
@@ -204,7 +130,6 @@
             }
 
             }
-        }
 
         .checkbox{
             display:flex;
@@ -229,7 +154,6 @@
         }
 
     
-}
 
 
 
