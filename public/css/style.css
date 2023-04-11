@@ -181,7 +181,10 @@ footer a {
 .explore {
   background: linear-gradient(#ff79d9, #9356DC); /*height: 50px;*/
   border-radius: 25px;
-  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: white;
   font-size: 18px;
   border: none;
@@ -197,6 +200,10 @@ footer a {
 .explore:hover {
   background: linear-gradient(#ff91e0, #9a65da);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.command-bouton {
+  padding: 10px;
 }
 
 * {
