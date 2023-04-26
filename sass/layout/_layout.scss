@@ -1,0 +1,183 @@
+.main-container{
+    display:flex;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width:100%;
+    margin: 0;
+    padding-top:30px;
+    padding-bottom:30px;
+    z-index:1;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    box-shadow: 0px 5px 0px rgba(20, 20, 20, 0.801);
+    .fa-arrow-left {
+        font-size:20px;
+        position:absolute;
+        color:black;
+        top:4%;
+        left:1.5em;
+    }
+}
+
+.logo{
+    width:45%;
+}
+
+footer{
+    background:#353535;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color:white;
+    padding-bottom:30px;
+    h3{ 
+        font-family: $txt-logo-titre;
+        font-size:25px;
+        margin-left:20px;
+    }
+    ul{
+        font-family: $txt-paragraphe;
+        padding-left:0;
+        margin-left:20px;
+    }
+    li{
+        margin-top:12px;
+    }
+    i{
+        margin-right:9px;
+    }
+    .fa-handshake{
+        transform: rotate(45deg);
+    }
+    .fa-utensils{
+        margin-right:15px;
+    }
+    a{
+        color:white;
+        text-decoration: none;
+    }
+}
+
+/*Page du restaurant*/
+.container-menu{
+    background: $lighter-grey;
+    position:relative;
+    width:100%;
+    z-index:3;
+    margin-top:-4rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    .restaurant-menu{
+        padding-top:35px;
+        background:$lighter-grey;
+        display:flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .restaurant-name{
+        display:flex;
+        font-family:$txt-logo-titre;
+        color:black;
+        font-size:24px;
+        margin:0;
+    }
+}
+    
+    .menu{
+        margin-top:20px;
+        margin-left:13px;
+        .dish{
+            position:relative;
+            font-family: $txt-paragraphe;
+            font-weight:300;
+            margin-top:20px;
+            margin-bottom:40px;
+            padding-bottom:5px;
+            &::after{
+                position:absolute;
+                content:"";
+                width:2.5rem;
+                height:0.2rem;
+                left:0;
+                bottom:0;
+                background:$color-third;
+            }   
+        }
+    }
+
+    .restaurant-picture{
+        width:100%;
+        z-index:-1;
+        .picture{
+            width:100%;
+        }
+    }
+    
+    
+    
+            .article{
+                background:white;
+                border-radius:25px;
+                padding:10px;
+                width:93%;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:15px;
+                font-family: $txt-paragraphe;
+                display: flex;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                .article-name{
+                    position: relative;
+                    flex:1;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .article-title{
+                    text-overflow:ellipsis;
+                }
+                .article-subtitle{
+                    font-size:15px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .article-price{
+                    margin-right:3em;
+                    display:flex;
+                    justify-content: flex-end;
+                    align-items:flex-end;
+                    font-weight: bold;
+                }
+    
+                }
+    
+            .checkbox{
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                background:$color-third;
+                width:5rem;
+                margin:-1rem -6rem -1rem -1rem;
+                .fa-check{
+                    color:$color-third;
+                    background:white;
+                    padding:3px;
+                    border-radius:20px;
+                }
+            }
+    
+            .command{
+                width:100%;
+                display:flex;
+                justify-content: center;
+                margin-top:20px;
+            }
+    
