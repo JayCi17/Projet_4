@@ -424,9 +424,12 @@ footer a {
   padding-left: 10px;
 }
 .element1 .fa-store {
-  font-size: 25px;
+  font-size: 30px;
   padding-left: 5px;
   padding-right: 10px;
+}
+.element1 .fa-list-ul {
+  font-size: 30px;
 }
 .element1 h4 {
   font-size: 16px;
