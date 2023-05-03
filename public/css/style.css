@@ -214,7 +214,7 @@ footer a {
   .choice .reserve {
     font-family: "roboto", sans-serif;
     font-size: 3em;
-    font-wight: bold;
+    font-weight: bold;
   }
   .choice .catch-phrase {
     font-family: "roboto", sans-serif;
@@ -471,7 +471,7 @@ footer a {
 }
 
 .fa-heart:hover {
-  color: linear-gradient(#ff79d9, #9356DC);
+  background-color:linear-gradient(#ff79d9, #9356DC);
   font-weight: bold;
   cursor: pointer;
   transition: all 2s linear;
@@ -481,7 +481,7 @@ footer a {
   font-size: 24px;
 }
 .heart:hover {
-  background: linear-gradient(#9356DC, #ff79d9);
+  /*background: linear-gradient(#9356DC, #ff79d9);*/
   font-weight: bold;
   background-clip: text;
   -webkit-background-clip: text;
